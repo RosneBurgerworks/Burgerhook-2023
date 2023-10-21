@@ -1,0 +1,20 @@
+#pragma once
+
+#include <settings/Registered.hpp>
+#include <menu/BaseMenuObject.hpp>
+
+namespace zerokernel
+{
+
+class WindowCloseButton : public BaseMenuObject
+{
+public:
+    ~WindowCloseButton() override = default;
+
+    WindowCloseButton();
+
+    void render() override;
+
+    bool onLeftMouseClick() override;
+};
+} // namespace zerokernel

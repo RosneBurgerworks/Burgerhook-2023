@@ -1,0 +1,59 @@
+<Tab name="Utilities" padding="4 4 4 4">
+    <Box name="Autojoin" width="content" height="content" padding="12 6 6 6">
+        <List width="200">
+            <AutoVariable width="fill" target="autojoin.auto-queue" label="Auto queue"/>
+            <AutoVariable width="fill" target="autojoin.auto-requeue" label="Auto requeue"/>
+            <AutoVariable width="fill" target="misc.auto-abandon" label="Auto abandon" tooltip="Automatically abandons match after disconnect"/>
+            <AutoVariable width="fill" target="autoqueue.mode" label="Autoqueue mode" min="0" max="12"/>
+            <LabeledObject width="fill" label="Autojoin class" tooltip="Automatically pick a class">
+                <Select target="autojoin.class">
+                    <Option name="None" value="0"/>
+                    <Option name="Scout" value="1"/>
+                    <Option name="Sniper" value="2"/>
+                    <Option name="Soldier" value="3"/>
+                    <Option name="Demoman" value="4"/>
+                    <Option name="Medic" value="5"/>
+                    <Option name="Heavy" value="6"/>
+                    <Option name="Pyro" value="7"/>
+                    <Option name="Spy" value="8"/>
+                    <Option name="Engineer" value="9"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="autojoin.team" label="Autojoin team" tooltip="Automatically join a team"/>
+        </List>
+    </Box>
+    <Box name="Bot-Utilities" width="content" height="content" padding="12 6 6 6" x="215">
+        <List width="200">
+            <AutoVariable width="fill" target="cat-bot.abandon-if.enable" label="Enable Abandon-if"/>
+            <AutoVariable width="fill" target="cat-bot.requeue-if.humans-lte" label="Requeue if humans lte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.bots-gte" label="Abandon if bots gte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.ipc-bots-gte" label="Abandon if IPC bots gte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.humans-lte" label="Abandon if humans lte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.players-lte" label="Abandon if players lte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.team-lte" label="Abandon if team Lte"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.enable" label="Micspam"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.interval-off" label="Micspam interval off"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.interval-on" label="Micspam interval on"/>
+            <AutoVariable width="fill" target="cat-bot.anti-autobalance" label="Anti auto balance"/>
+            <AutoVariable width="fill" target="cat-bot.anti-motd" label="Anti MOTD"/>
+            <AutoVariable width="fill" target="cat-bot.autovote-map" label="Autovote for current map"/>
+        </List>
+    </Box>
+    <Box name="Vote Utilities" width="content" height="content" padding="12 6 6 6" y="115">
+        <List width="200">
+            <AutoVariable width="fill" target="votekicks.enabled" label="Votekick"/>
+            <LabeledObject width="fill" label="Votekicks Mode">
+                <Select target="votekicks.mode">
+                    <Option name="Smart" value="0"/>
+                    <Option name="Random" value="1"/>
+                    <Option name="Sequential" value="2"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="votekicks.timer" label="Votekick Timer"/>
+            <AutoVariable width="fill" target="votekicks.rage-only" label="Rage Only"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.rage" label="Prioritize Rage"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.previous" label="Prioritize Previous"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.highest-score" label="Prioritize Score"/>
+        </List>
+    </Box>
+</Tab>

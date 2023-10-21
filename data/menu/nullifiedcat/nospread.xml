@@ -1,0 +1,12 @@
+<Tab name="Nospread" padding="6 6 6 6">
+    <Box padding="12 6 6 6" width="content" height="content" name="Nospread">
+        <List width="150">
+            <AutoVariable width="fill" target="nospread.center-cone" label="Center spread" tooltip="Center the bullet spread cone for a higher hitrate"/>
+            <AutoVariable width="fill" target="nospread.draw-info" label="Draw info" tooltip="Draw some useful info onscreen"/>
+            <AutoVariable width="fill" target="nospread.draw-info.mantissa" label="Draw step size" tooltip="Draw inaccuracy of server clock floats (higher = better)"/>
+            <AutoVariable width="fill" target="nospread.use-extreme-accuracy" label="Precision mode" tooltip="Makes nospread sync slower, but also more accurate and ping resistant"/>
+            <AutoVariable width="fill" target="nospread.use-average-latency" label="Use average latency" tooltip="Use average latency for ping correction instead of current one"/>
+            <AutoVariable width="fill" target="nospread.correct-ping" label="Try to lag compensate" tooltip="Attempt to compensate for ping. Disable if you miss a lot on low jitter"/>
+        </List>
+    </Box>
+</Tab>

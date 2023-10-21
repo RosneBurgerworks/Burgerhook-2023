@@ -1,0 +1,17 @@
+<Tab name="Collective" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6" name="Collective">
+        <List width="200">
+            <AutoVariable width="fill" target="misc.die-if-vac" label="Crash on VAC" tooltip="Terminates steam if vac error or banned account"/>
+            <AutoVariable width="fill" target="debug.join-wait-time" label="Joinspam wait time"/>
+        </List>
+    </Box>
+    <Box height="content" width="content" padding="12 6 6 6" name="Extra" y="50">
+        <List width="200">
+            <AutoVariable width="fill" target="misc.no-push" label="No push"/>
+            <AutoVariable width="fill" target="misc.anti-afk" label="Anti AFK"/>
+            <AutoVariable width="fill" target="misc.ping-reducer.enable" label="Ping reducer"/>
+            <AutoVariable width="fill" target="noisemaker-spam.enable" label="Noisemaker spam"/>
+            <AutoVariable width="fill" target="player-tools.ignore.taunting" label="Ignore taunting players"/>
+        </List>
+    </Box>
+</Tab>

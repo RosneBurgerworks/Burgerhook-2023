@@ -1,0 +1,85 @@
+<Tab name="Chat" padding="4 4 4 4">
+    <Box padding="12 6 6 6" width="content" height="content" name="Chat spam">
+        <List width="150">
+            <LabeledObject width="fill" label="Spam mode">
+                <Select target="spam.source">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Custom" value="1"/>
+                    <Option name="Default" value="2"/>
+                    <Option name="Lennyfaces" value="3"/>
+                    <Option name="Nullcore" value="4"/>
+                    <Option name="Lmaobox" value="5"/>
+                    <Option name="Lithium" value="6"/>
+                    <Option name="Pazer" value="7"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="spam.filename" label="Custom spam"/>
+            <AutoVariable width="fill" target="spam.random" label="Randomize"/>
+            <AutoVariable width="fill" target="spam.delay" label="Spam delay" tooltip="Delay in milliseconds"/>
+            <AutoVariable width="fill" target="spam.teamchat" label="Spam in teamchat" tooltip="Spam in teamchat instead of game chat"/>
+            <AutoVariable width="fill" target="spam.query-static" label="Static Query"/>
+        </List>
+    </Box>
+    <Box name="Voice spam" width="content" height="content" padding="12 6 6 6" y="115">
+        <List width="150">
+            <LabeledObject width="fill" label="Voice spam" tooltip="Spam character voicelines">
+                <Select target="spam.voicecommand">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Random" value="1"/>
+                    <Option name="Medic" value="2"/>
+                    <Option name="Thanks" value="3"/>
+                    <Option name="Go Go Go" value="4"/>
+                    <Option name="Move Up" value="5"/>
+                    <Option name="Go Left" value="6"/>
+                    <Option name="Go Right" value="7"/>
+                    <Option name="Yes" value="8"/>
+                    <Option name="Nope" value="9"/>
+                    <Option name="Incoming" value="10"/>
+                    <Option name="Spy" value="11"/>
+                    <Option name="Sentry Ahead" value="12"/>
+                    <Option name="Teleporter Here" value="13"/>
+                    <Option name="Dispenser Here" value="14"/>
+                    <Option name="Sentry Here" value="15"/>
+                    <Option name="Activate Charge" value="16"/>
+                    <Option name="Help" value="17"/>
+                    <Option name="Battle Cry" value="18"/>
+                    <Option name="Cheers" value="19"/>
+                    <Option name="Jeers" value="20"/>
+                    <Option name="Positive" value="21"/>
+                    <Option name="Negative" value="22"/>
+                    <Option name="Nice Shot" value="23"/>
+                    <Option name="Nice Job" value="24"/>
+                </Select>
+            </LabeledObject>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Chat log" y="150">
+        <List width="150">
+            <AutoVariable width="fill" target="chat-log.enable" label="Enable chat log"/>
+            <AutoVariable width="fill" target="chat-log.no-ipc" label="Ignore IPC" tooltip="Don't save IPC chat"/>
+            <AutoVariable width="fill" target="chat-log.no-spam" label="Anti spam" tooltip="Don't save your chat spam to the log"/>
+        </List>
+    </Box>
+    <Box name="Misc" width="content" height="content" padding="12 6 6 6" x="352">
+        <List width="177">
+            <AutoVariable width="fill" target="chat.anti-spam" label="Anti-spam" tooltip="Hides chat spam"/>
+        </List>
+    </Box>
+    <Box name="Votelogger" width="content" height="content" padding="12 6 6 6" x="170">
+        <List width="165">
+            <AutoVariable width="fill" target="votelogger.autovote.yes" label="Autovote yes"/>
+            <AutoVariable width="fill" target="votelogger.autovote.no" label="Autovote no"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait" label="Autovote wait"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait.min" label="Wait min (ms)"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait.max" label="Wait max (ms)"/>
+            <AutoVariable width="fill" target="votelogger.autovote.no.rage" label="Kick RAGE status"/>
+            <AutoVariable width="fill" target="votelogger.chat" label="Log votes" tooltip="Shows you new votekicks in your personal chat."/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay" label="Log votes to party"/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay.result" label="Log votes result to party"/>
+            <AutoVariable width="fill" target="votelogger.chat.casts" label="Log casts" tooltip="Also log individual vote casts (F1/F2)"/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay.casts" label="Log casts to party" tooltip="Also log individual vote casts (F1/F2)"/>
+            <AutoVariable width="fill" target="votelogger.requeue-on-kick" label="Requeue on kick" tooltip="Will stop queue if the vote fails on local player"/>
+            <AutoVariable width="fill" target="votelogger.leave-after-local-vote" label="Abandon on local vote"/>
+        </List>
+    </Box>
+</Tab>

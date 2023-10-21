@@ -1,0 +1,8 @@
+#pragma once
+
+constexpr const char *CON_PREFIX = "cat_";
+
+constexpr int MAX_ENTITIES = 2048;
+constexpr int MAX_PLAYERS  = 32;
+// 0 is "World" but we still can have MAX_PLAYERS players, so consider that
+constexpr int PLAYER_ARRAY_SIZE = 1 + MAX_PLAYERS;

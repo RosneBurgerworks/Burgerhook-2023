@@ -1,0 +1,29 @@
+<Tab name="World" padding="4 4 4 4">
+    <Box padding="12 6 6 6" width="content" height="content" name="FOV">
+        <List width="180">
+            <AutoVariable width="fill" target="visual.fov" label="FOV"/>
+            <AutoVariable width="fill" target="remove.zoom" label="Apply if zoomed"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Thirdperson" y="50">
+        <List width="180">
+            <AutoVariable width="fill" target="visual.thirdperson.enable" label="Enable thirdperson"/>
+            <AutoVariable width="fill" target="visual.thirdperson-button" label="Thirdperson button" tooltip="Set a button to toggle thirdperson"/>
+            <AutoVariable width="fill" target="visual.thirdperson.real-angles" label="Show angles in thirdperson" tooltip="Show real antiaim angles in third person"/>
+            <AutoVariable width="fill" target="visual.thirdperson.disable-zoomed" label="Disable when zoomed" tooltip="Disables thirdperson when zoomed in"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Remove" x="195">
+        <List width="180">
+            <AutoVariable width="fill" target="remove.cloak" label="Remove cloak"/>
+            <AutoVariable width="fill" target="remove.disguise" label="Remove disguise"/>
+            <AutoVariable width="fill" target="remove.scope" label="Remove scope"/>
+            <AutoVariable width="fill" target="remove.zoom" label="Remove zoom/keep rifle"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Misc" x="195" y="80">
+        <List width="180">
+            <AutoVariable width="fill" target="visual.no-shake" label="No shake" tooltip="Stops the screen from shaking"/>
+        </List>
+    </Box>
+</Tab>

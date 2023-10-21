@@ -1,0 +1,12 @@
+<Tab name="Info" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6" name="BurgerHook">
+        <List width="150">
+            <AutoVariable width="fill" target="hack.enable" label="Enable Burgerhook"/>
+            <AutoVariable width="fill" target="hack-info.enable" label="Enable Burgerhook label"/>
+            <AutoVariable width="fill" target="hack-info.x" label="X position"/>
+            <AutoVariable width="fill" target="hack-info.y" label="Y position"/>
+            <AutoVariable width="fill" target="hack-info.size" label="Size"/>
+            <AutoVariable width="fill" target="hack-info.alpha" label="Transparency"/>
+        </List>
+    </Box>
+</Tab>
